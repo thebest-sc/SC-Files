@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "SC Files",
+  "version": "0.1.1",
+  "description": "Scratch yorumlarında paylaşmak için dosya bağlantıları hazırlamaya yönelik başlangıç eklentisi.",
+  "action": {
+    "default_title": "SC Files",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "logo.png",
+      "32": "logo.png",
+      "48": "logo.png",
+      "128": "logo.png"
+    }
+  },
+  "icons": {
+    "16": "logo.png",
+    "32": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png"
+  },
+  "permissions": ["clipboardWrite"]
+}

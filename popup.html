@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SC Files</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <img class="logo" src="logo.png" alt="SC Files logosu">
+      <div>
+        <h1>SC Files</h1>
+        <p class="subtitle">Dosya paylaşım yardımcısı</p>
+      </div>
+    </header>
+
+    <label class="picker" for="fileInput">
+      <span class="pick-icon">＋</span>
+      <strong>Bilgisayardan dosya seç</strong>
+      <small>Paylaşmak istediğin dosyayı seç</small>
+    </label>
+    <input id="fileInput" type="file">
+
+    <section id="fileInfo" class="file-info hidden">
+      <strong id="fileName"></strong>
+      <span id="fileSize"></span>
+    </section>
+
+    <button id="copyName" disabled>Dosya adını kopyala</button>
+
+    <div class="notice">
+      <strong>Bağlantı oluşturma henüz hazır değil</strong>
+      <p>Başkalarının dosyayı indirebilmesi için dosyanın internette barındırılması gerekir. Bu ilk sürüm dosyayı bilgisayarında seçer; henüz internete yüklemez ve herkese açık bağlantı oluşturmaz.</p>
+    </div>
+    <footer>SC Files · İlk test sürümü</footer>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>
