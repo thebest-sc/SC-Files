@@ -10,31 +10,31 @@
   <main class="app">
     <header>
       <img class="logo" src="logo.png" alt="SC Files logosu">
-      <div>
-        <h1>SC Files</h1>
-        <p class="subtitle">Dosya paylaşım yardımcısı</p>
-      </div>
+      <div><h1>SC Files</h1><p class="subtitle">Dosya yükle ve paylaş</p></div>
     </header>
-
     <label class="picker" for="fileInput">
       <span class="pick-icon">＋</span>
       <strong>Bilgisayardan dosya seç</strong>
-      <small>Paylaşmak istediğin dosyayı seç</small>
+      <small>Dosyanı seç, sonra yükle</small>
     </label>
     <input id="fileInput" type="file">
-
     <section id="fileInfo" class="file-info hidden">
-      <strong id="fileName"></strong>
-      <span id="fileSize"></span>
+      <strong id="fileName"></strong><span id="fileSize"></span>
     </section>
-
-    <button id="copyName" disabled>Dosya adını kopyala</button>
-
+    <button id="uploadBtn" disabled>Dosyayı yükle</button>
+    <p id="status" class="status" role="status">Henüz dosya seçilmedi.</p>
+    <section id="result" class="result hidden">
+      <strong>Yükleme tamamlandı!</strong>
+      <p>Bu bağlantıyı Scratch yorumuna ekleyebilirsin:</p>
+      <input id="linkOutput" readonly aria-label="Dosya bağlantısı">
+      <button id="copyLink">Bağlantıyı kopyala</button>
+      <button id="copyComment" class="secondary">Scratch yorumu metnini kopyala</button>
+    </section>
     <div class="notice">
-      <strong>Bağlantı oluşturma henüz hazır değil</strong>
-      <p>Başkalarının dosyayı indirebilmesi için dosyanın internette barındırılması gerekir. Bu ilk sürüm dosyayı bilgisayarında seçer; henüz internete yüklemez ve herkese açık bağlantı oluşturmaz.</p>
+      <strong>Önemli</strong>
+      <p>Dosya 0x0.st adlı üçüncü taraf hizmete yüklenir ve bağlantıya sahip kişilerce erişilebilir. Dosyalar geçicidir; kalıcı saklama garantisi yoktur. Özel veya hassas dosya yükleme. Scratch'in kendi yorumları dosya eki/kartı desteklemez; yorumda bağlantı görünür.</p>
     </div>
-    <footer>SC Files · İlk test sürümü</footer>
+    <footer>SC Files · v0.2.1</footer>
   </main>
   <script src="popup.js"></script>
 </body>
